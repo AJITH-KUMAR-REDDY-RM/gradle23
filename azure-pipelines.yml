@@ -1,0 +1,11 @@
+trigger:
+-master
+pool:
+ name: Default
+steps:
+  - script: echo myfirst azure pipeline in gradle project
+    displayName: 'pipeline created using gradle'
+  - script: gradle build
+    displayName: 'gradle build '
+  - script: gradle run
+    displayName: 'run using gradle run command'
